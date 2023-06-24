@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#left-side-bar{
+    width: 20vw;
+    height: 100vh;
+    background-color:whitesmoke;
+    position: fixed;
+    left: 0;
+    
+}
+#left-sidebar-link{
+display: flex;
+flex-direction: column;
+margin: 5rem;
+gap: 3rem;
+font-size: 1.1rem;
+font-weight: 500;
+cursor: pointer;
+}
+.icon{
+    display: flex;
+    gap: 10px;
+}

@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#right-side-bar{
+    width: 20vw;
+    height: 100vh;
+    background-color:whitesmoke;
+    position: fixed;
+    right: 0;
+}
+#sort-heading{
+font-size: 1.2rem;
+font-weight: bold;
+
+}
+#sort-button{
+    width: 15vw;
+    height: 1.8rem;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0.8;
+}
+#right-sidebar-button{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    gap: 0.5rem;
+    font-size: 14px;
+
+}
