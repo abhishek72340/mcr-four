@@ -1,18 +1,21 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom';
-import Navbar from './Components/navbar/Navbar'
-import Main from './Components/main/Main';
-import Comment from './Pages/comment/Comment';
+import {Route, Routes} from "react-router-dom";
+import Navbar from "./components/Navbar.jsx";
+import Home from "./pages/Home.jsx";
+import Comments from "./pages/Comments.jsx";
 
+import './App.css'
 
-export default function App() {
-  return (
-    <div>
-      <Navbar />
-      <Routes>
-        <Route path='/' element={<Main />} />
-        <Route path='/comment/:id' element={<Comment />} />
-      </Routes>
-    </div>
-  )
+function App() {
+
+    return (
+        <>
+            <Navbar/>
+            <Routes>
+                <Route path={'/'} element={<Home/>}/>
+                <Route path={'/comment/:postId'} element={<Comments/>}/>
+            </Routes>
+        </>
+    )
 }
+
+export default App
